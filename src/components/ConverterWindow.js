@@ -1,13 +1,46 @@
-import React from 'react';
-import './index.css'; 
-import ConverterWindow from './components/ConverterWindow';
+import React, { useState, useEffect } from 'react';
+import { Input, Select, Button } from 'antd';
+import axios from 'axios';
 
-const App = () => {
+const { Option } = Select;
+
+const ConverterWindow = () => {
+  const [currencies, setCurrencies] = useState([]);
+  const [amount, setAmount] = useState(1);
+  const [fromCurrency, setFromCurrency] = useState('USD');
+  const [toCurrency, setToCurrency] = useState('EUR');
+  const [convertedAmount, setConvertedAmount] = useState(null);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    axios
+      .get('https://open.er-api.com/v6/latest/USD')
+      .then((response) => {
+        const currencyData = response.data.rates;
+        setCurrencies(Object.keys(currencyData));
+        setToCurrency('EUR');
+      })
+      .catch((error) => console.error('Error fetching the data:', error));
+  }, []);
+
+  const convertCurrency = () => {
+    setLoading(true);
+    axios
+      .get(`https://open.er-api.com/v6/latest/${fromCurrency}`)
+      .then((response) => {
+        const rate = response.data.rates[toCurrency];
+        setConvertedAmount((amount * rate).toFixed(2));
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error('Error during conversion:', error);
+        setLoading(false);
+      });
+  };
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center bg-gray-100">
-      <ConverterWindow/>
-      {/* <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+    <div className="min-h-screen flex flex-col justify-center items-center bg-gray-100 p-4">
+      <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
         <h1 className="text-2xl font-bold text-center mb-6">Currency Converter</h1>
         
         <div className="mb-4">
@@ -60,9 +93,9 @@ const App = () => {
             </h2>
           </div>
         )}
-      </div> */}
+      </div>
     </div>
   );
 };
 
-export default App;
+export default ConverterWindow;
