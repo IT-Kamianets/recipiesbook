@@ -1,6 +1,7 @@
-name: Deploy Vue to GitHub Pages
+name: Deploy Angular to GitHub Pages
 
 on:
+  # Trigger the workflow on push to the master branch or manually
   push:
     branches:
       - master
@@ -23,15 +24,15 @@ jobs:
 
       # Step 3: Install dependencies
       - name: Install dependencies
-        run: npm install
+        run: npm i
 
-      # Step 4: Build the Vue app
-      - name: Build Vue app
+      # Step 4: Build the Angular app
+      - name: Build Angular app
         run: npm run build
 
       # Step 5: Create CNAME file
       - name: Create CNAME file
-        run: echo "recipiesbook.itkamianets.com" > dist/CNAME
+        run: echo "recipiesbook.itkamianets.com" > ./dist/CNAME
 
       # Step 6: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
