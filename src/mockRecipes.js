@@ -6,7 +6,7 @@ export const recipes = [
     title: "Паста з соусом Альфредо",
     description: "Смачна паста з вершковим соусом Альфредо.",
     type: "основна страва",
-    image: "https://example.com/images/pasta.jpg",
+    image: "https://feastdelights.com/wp-content/uploads/2023/12/shrimp-alfredo-pasta-recipe.webp",
     recipe: "Варіть пасту в підсоленій воді. На сковорідці розтопіть вершкове масло, додайте вершки та натертий пармезан. Додайте пасту та перемішайте, поки соус загусне. Подавати гарячою.",
   },
   {
@@ -14,7 +14,7 @@ export const recipes = [
     title: "Салат Цезар",
     description: "Легкий салат з куркою, грінками та сиром пармезан.",
     type: "закуска",
-    image: "https://example.com/images/caesar.jpg",
+    image: "https://klopotenko.com/wp-content/uploads/2022/01/cezar-z-kyrkou-i-tomatamu_sitewebukr-1000x600.jpg?v=1720546600",
     recipe: "Наріжте салат Ромен, додайте грінки та натертий пармезан. Додайте підсмажене куряче філе, полийте заправкою з майонезу, лимонного соку та анчоусів.",
   },
   {
@@ -22,7 +22,7 @@ export const recipes = [
     title: "Смузі з ягід",
     description: "Охолоджений смузі з міксом літніх ягід.",
     type: "десерт",
-    image: "https://example.com/images/smoothie.jpg",
+    image: "https://learning.ua/content/newsimg/1266.jpg",
     recipe: "Змішайте ягоди, банан та йогурт в блендері до однорідності. Додайте мед за смаком. Подавайте охолодженим.",
   },
   {
@@ -30,7 +30,7 @@ export const recipes = [
     title: "Омлет з овочами",
     description: "Поживний омлет з помідорами та зеленню.",
     type: "сніданок",
-    image: "https://example.com/images/omelette.jpg",
+    image: "https://kamenskoe.city/uploads/news/redactor/6ay3ji8t1wc5scyl.jpg",
     recipe: "Збийте яйця з сіллю і перцем. Додайте нарізані помідори та зелень. Смажте на середньому вогні до готовності.",
   },
   {
@@ -38,7 +38,7 @@ export const recipes = [
     title: "Грецький салат",
     description: "Освіжаючий салат з огірками, помідорами та сиром фета.",
     type: "закуска",
-    image: "https://example.com/images/greek_salad.jpg",
+    image: "https://i.obozrevatel.com/food/recipemain/2018/11/15/screenshot81.png?size=636x424",
     recipe: "Наріжте помідори, огірки, перець і червону цибулю. Додайте сир фета і маслини. Заправте оливковою олією з орегано.",
   },
   {
@@ -46,7 +46,7 @@ export const recipes = [
     title: "Курячі крильця",
     description: "Хрусткі курячі крильця з соусом барбекю.",
     type: "основна страва",
-    image: "https://example.com/images/chicken_wings.jpg",
+    image: "https://img.tsn.ua/cached/125/tsn-dcf0ded845fb4249b37e656be0b1987a/thumbs/428x268/a8/d1/dffb7027f8c5ae0d708772f285c3d1a8.jpeg",
     recipe: "Маринуйте курячі крильця у соусі барбекю, сіль, перець, паприка. Запікайте при 200°C 30 хвилин до хрусткої скоринки.",
   },
   {
@@ -54,7 +54,7 @@ export const recipes = [
     title: "Шоколадний торт",
     description: "Ніжний шоколадний торт з кремовою начинкою.",
     type: "десерт",
-    image: "https://example.com/images/chocolate_cake.jpg",
+    image: "https://mukachevo.net/uploads/media/images/image/5c/bb/5cbb2bbb20af4f98a9f2f69cc679a9e4uykm24x1cbv6nnw_image.jpg",
     recipe: "Змішайте борошно, какао, цукор, яйця і вершкове масло. Випікайте при 180°C протягом 30 хвилин. Додайте шоколадний крем зверху.",
   },
   {
@@ -62,7 +62,7 @@ export const recipes = [
     title: "Брускети з помідорами",
     description: "Тости з помідорами, базиліком та оливковою олією.",
     type: "закуска",
-    image: "https://example.com/images/bruschetta.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRjF0f5Xkqe159zR-luYPWMfmKRZsP7IpkLA&s",
     recipe: "Наріжте багет та підсушіть у духовці. Натерти часником, додайте нарізані помідори, базилік та оливкову олію.",
   },
   {
@@ -70,7 +70,7 @@ export const recipes = [
     title: "Морозиво ванільне",
     description: "Охолоджуючий десерт зі смаком ванілі.",
     type: "десерт",
-    image: "https://example.com/images/vanilla_ice_cream.jpg",
+    image: "https://deluxe.com.ua/media/img/uploads/image/homemadevanilliaicecream.jpg",
     recipe: "Збийте вершки з ваніллю та цукром. Заморозьте у морозивниці або мисці, перемішуючи кожні 30 хвилин до повного замерзання.",
   },
   {
@@ -78,8 +78,7 @@ export const recipes = [
     title: "Гамбургер",
     description: "Соковитий бургер з яловичою котлетою та сиром чеддер.",
     type: "основна страва",
-    image: "https://example.com/images/burger.jpg",
+    image: "https://www.rbc.ua/static/img/_/p/_pixabay_com_209_1300x820.jpg",
     recipe: "Підсмажте котлету, додайте сир чеддер. Зберіть бургер з булочкою, салатом, томатами і соусом.",
   },
-  // Додайте інші рецепти подібним чином
 ];
