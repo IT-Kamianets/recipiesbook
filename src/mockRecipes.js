@@ -51,7 +51,7 @@ export const recipes = [
   },
   {
     id: 7,
-    title: "Шоколадний торт 2",
+    title: "Шоколадний торт",
     description: "Ніжний шоколадний торт з кремовою начинкою.",
     type: "десерт",
     image: "https://mukachevo.net/uploads/media/images/image/5c/bb/5cbb2bbb20af4f98a9f2f69cc679a9e4uykm24x1cbv6nnw_image.jpg",
