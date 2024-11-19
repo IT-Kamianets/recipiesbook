@@ -59,7 +59,7 @@ export const recipes = [
   },
   {
     id: 8,
-    title: "Брускети з помідорами",
+    title: "Брускети з помідорами1",
     description: "Тости з помідорами, базиліком та оливковою олією.",
     type: "закуска",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRjF0f5Xkqe159zR-luYPWMfmKRZsP7IpkLA&s",
